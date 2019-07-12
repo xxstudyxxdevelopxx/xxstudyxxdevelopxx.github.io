@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2 {
+  margin-bottom: 30px;  
+}
+
+body {
+  font-family: "Noto Sans KR", serif;
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: seashell;
+}
+
+.wrapper > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .logo {
+  height: 100px;
+  background-color: rgb(246, 202, 165);
+}
+
+header nav {
+  height: 50px;
+  background-color: rgb(255, 251, 202);
+}
+.navigation li {
+  float: left;
+  display: inline-block;
+}
+
+.navigation li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  text-align: center;
+}
+
+.main-visual {
+  min-height: 500px;
+  background: rgb(180, 240, 222);
+}
+
+.for-you-section {
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.product {
+  float: left;
+  background-color: darksalmon;
+}
+
+.for-you-section .product-list {
+  overflow: hidden;
+  width: 2000px;
+  height: 350px;
+}
+
+.for-you-section .product {
+  width: 300px;
+  height: 350px;
+  margin-right: 30px;
+}
+
+.middle-banner {
+  width: 900px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cornflowerblue;
+}
+
+.season-item-section, .hit-new-section {
+  margin-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.season-item-section .product,
+.hit-new-section .product {
+  width: 230px;
+  height: 330px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.season-item-section .product:nth-child(4n+1),
+.hit-new-section .product:nth-child(4n+1) {
+  clear: both;
+  margin-left: 0;
+}
+
+.brand-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(231, 231, 231);
+}
+.brand-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brand-section {
+  overflow: hidden;
+  min-width: 1020px;
+}
+
+.brand-section .brand-list {
+  width: 2000px;
+}
+
+.brand-section .brand {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.etc-section {
+  min-height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(65, 65, 65);
+}
+
+.etc-section-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.etc-section li {
+  float: left;
+  width: 300px;
+  height: 150px;
+  margin-left: 40px;
+  background-color: #fff;
+}
+
+.etc-section li:first-child {
+  margin-left: 0;
+}
+
+footer .company-info {
+  height: 200px;
+  background-color: turquoise;
+}
+footer .legal-notice {
+  height: 50px;
+  background-color: tan;
+}

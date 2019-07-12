@@ -1,0 +1,79 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+.clear::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 2rem;
+	background-color: burlywood;
+	padding: 20px;
+}
+
+.wrapper {
+	min-width: 800px;
+}
+
+header {
+	min-height: 100px;
+	padding: 20px;
+	background-color: beige;
+}
+
+nav {
+	min-height: 50px;
+	background-color: cornflowerblue;
+}
+
+main {
+	padding: 20px;
+}
+
+aside {
+	float: left;
+	min-width: 200px;
+	min-height: 500px;
+	margin-right: -100%; /* IE 대응 */
+	background-color: purple;
+}
+
+.contents-section {
+	position: relative;
+	min-height: 700px;
+	margin-left: 220px;
+	background-color: violet;
+}
+
+footer {
+	min-height: 100px;
+}
+
+/* contents-section > sns */
+.sns-list {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+
+.sns-list li {
+	display: inline-block;
+	float: left;
+	border: 1px solid #000;
+}

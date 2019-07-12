@@ -1,0 +1,144 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clear {
+	clear: both;
+	width: 100%;
+}
+ul, ol {
+	list-style: none;
+}
+
+/* 가상클래스 - 상태디자인 */
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: violet;
+	text-decoration: underline;
+}
+a:visited {
+	color: navy;
+}
+a:active {
+	color: yellow;
+}
+a:focus {	
+	text-decoration: underline;
+	outline: none;
+}
+/* 가상요소 */
+a::before {
+	content: "전"; /* 담긴 요소는 inline 요소 */
+	border: 1px solid #ff3;
+}
+a::after {
+	content: "후";
+	border: 1px solid #f92;
+}
+a::first-letter {
+	font-size: 30px;
+	font-weight: 700;
+}
+a::first-line {
+	border: 1px solid #0ff;
+}
+/* Layout */
+.wrap {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header {
+	height: 100px;
+	background-color: tomato;
+}
+.main {
+	overflow: hidden;
+	background-color: tan;
+}
+.main::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.sidemenu {
+	float: left;
+	width: 200px;
+	height: 500px;
+	background-color: yellow;
+}
+.contents-section {
+	float: right;
+	width: 600px;
+	height: 800px;
+	background-color: lightgray;
+}
+.contents-section::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.footer {
+	clear: both;
+	height: 100px;
+	background-color: beige;
+}
+
+/* Contents */
+.contents-section article {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+	padding: 10px;
+	background-color: navy;
+}
+.contents-section article:first-child {
+	border: 1px dashed #fff;
+}
+.contents-section article:last-child {
+	border: 1px dotted #fff;
+}
+.contents-section article:nth-child(3) {
+	background-color: darkgoldenrod;
+}
+.contents-section article:nth-child(5n+1) {
+	clear: both;
+	margin-left: 0;
+}
+/* 
+
+1 + 0 = 1
+1 + 2 = 3
+3 + 2 = 3
+
+*/
+
+.contents-section article:nth-child(odd) {
+	background-color: black;
+}
+.contents-section article:nth-child(even) {
+	background-color: #fff;
+}
+
+.unordered-list {
+	clear: both;
+}
+.unordered-list > li {
+	padding: 20px;
+	border: 1px solid violet;
+}
+.unordered-list > li ul li {
+	padding: 20px;
+}
+.unordered-list > li ul li:first-child {
+	background-color: navy;
+}
+.unordered-list > li ul li:first-child + li {
+	background-color: orange;
+}

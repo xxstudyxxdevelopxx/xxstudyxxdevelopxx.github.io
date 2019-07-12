@@ -1,0 +1,64 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Montserrat', 'Noto Sans KR', sans-serif, '맑은 고딕';
+	/*  */
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: -0.025em;
+}
+
+/* 갤러리 리스트  */
+.contents-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* 썸네일 리스트 */
+.thumbnail-list {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.thumbnail-list figure {
+	float: none;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.thumbnail-list figure::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.thumbnail-list .img-box {
+	float: left;
+}
+.thumbnail-list .img-box,.thumbnail-list .img-box::after,.thumbnail-list .img-box img {
+	width: 100px;
+	height: 100px;
+}
+
+.thumbnail-list figcaption {
+	width: auto;
+	border: none;
+	margin-left: 120px;
+}
+
+.thumbnail-list a {
+	text-decoration: underline;
+}
+
+.thumbnail-list .subject {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+}
+
+.thumbnail-list .brand {
+	display: block;
+}

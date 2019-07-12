@@ -1,0 +1,113 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #333333;
+	line-height: 1.25;
+}
+
+.text-hidden {
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 1px;
+	height: 1px;
+	color: transparent;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+
+/* Form */
+.checkbox input {
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 1px;
+	height: 1px;
+	color: transparent;
+}
+.checkbox span {
+	display: inline-block;
+	height: 20px;
+	padding-left: 30px;
+	background: url('../image/icon/ico_s1_off.png') 0 50% no-repeat;
+	background-size: 20px 20px;
+}
+
+input:checked + span {
+	background-image: url('../image/icon/ico_s1_on.png');
+
+}
+
+/* Table */
+
+.table-wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+table {
+	width: 100%;
+	line-height: 1;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid #000;
+}
+
+th, td {
+	padding: 10px;
+}
+
+.table-list .list-number {
+	width:80px;
+}
+.table-list .list-title {
+	width:auto;
+}
+.table-list .list-date {
+	width:100px;
+}
+.table-list .list-writer {
+	width:100px;
+}
+.table-list .list-hitcount {
+	width:100px;
+}
+
+/* Button */
+.button {
+	text-align: center;
+	border: none;
+	background: ;
+}
+.button-default {
+	color: slateblue;
+	background: transparent;
+	border: 2px solid slateblue;
+
+}
+
+.table-list td a {
+	/* 말줄임 처리 */
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Page navigation */

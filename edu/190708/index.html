@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Table / Form</title>
+	<link rel="stylesheet" href="css/table.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h2>회원가입</h2>
+	<div class="table-wrapper">
+		<table class="table">
+			<caption class="text-hidden">회원가입의 제목, 이름, 비밀번호, 주소, 전화번호, 관심사를 입력하는 폼입니다.</caption>
+			<colgroup>
+				<col style="width: 200px;">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">제목</th>
+					<th scope="col">내용</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">합계</th>
+					<td>10</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">이름</th>
+					<td>
+						<label for="">
+							<span class="text-hidden">이름입력</span>
+							<input type="text" name="" title="이름을 입력해주세요.">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">비밀번호</th>
+					<td>
+						<label for="">
+							<input type="password" name="" title="비밀번호 입력">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">비밀번호 확인</th>
+					<td>
+						<label for="">
+							<input type="password" name="" title="비밀번호 재입력">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">주소</th>
+					<td>
+						<div class="">
+							<label for="">
+								<input type="text" name="" title="주소를 입력해주세요.">
+							</label>
+							<a href="#" class="button btn-post-number" target="_blank">주소검색</a>
+						</div>
+						<div class="">
+							<label for="">
+								<input type="text" name="" title="상세주소를 입력해주세요.">
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">관심사</th>
+					<td>
+						<label for="" class="checkbox">
+							<input type="checkbox" name=""><span>스포츠</span>
+						</label>
+						<label for="" class="checkbox">
+							<input type="checkbox" name=""><span>영화</span>
+						</label>
+						<label for="" class="checkbox">
+							<input type="checkbox" name=""><span>음악</span>
+						</label>
+						<label for="" class="checkbox">
+							<input type="checkbox" name=""><span>정치</span>
+						</label>
+						<label for="" class="checkbox">
+							<input type="checkbox" name=""><span>경제</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">성별</th>
+					<td>
+						<label for="" class="radio-button">
+							<input type="radio" name="radio"><span>여</span>
+						</label>
+						<label for="" class="radio-button">
+							<input type="radio" name="radio"><span>남</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">전화번호</th>
+					<td>
+						<label for="">
+							<select name="" id="">
+								<option value="">선택</option>
+								<option value="">010</option>
+							</select>
+						</label>
+						<label for="">
+							<input type="text" name="" id="">
+						</label>
+						<label for="">
+							<input type="text" name="" id="">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">상세정보</th>
+					<td>
+						<label for="">
+							<textarea name="" id="" cols="75" rows="7"></textarea>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">파일첨부</th>
+					<td>
+						<label for="">
+							<input type="file" name="">
+							<span class="text-hidden">첨부파일</span>
+						</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //table -->
+	<div class="button-area t-center">
+		<a href="#" class="button btn-confirm">취소</a>
+		<a href="#" class="button btn-cancel">회원가입</a>
+	</div>
+	<!-- //.btn-area -->
+</body>
+</html>

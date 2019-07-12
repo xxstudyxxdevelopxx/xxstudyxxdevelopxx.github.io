@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Form 요소</title>
+</head>
+<body>
+	<!-- 
+		
+		form 
+		- method : get / post (보이게/안보이게)
+		fieldset
+		legend 제목
+
+		input
+		select
+		option
+		textarea 글수가 한정된 
+
+		input type 속성 
+		-	text / password / checkbox / radio / hidden
+		- button / submit /reset
+		- image
+		- label
+
+		// html5 새로 생성 (IE 지원되지 않음)
+		search
+		url
+		date
+		week
+		year
+		month
+		email
+		telephone
+
+		readonly / disabled
+		placeholder
+
+	 -->
+
+	<form method="POST" action="https://naver.com">
+
+	<fieldset>
+		<legend>폼요소 제목</legend>
+		<input type="text" name="" placeholder="아이디를 입력해주세요." value="">
+		<input type="password" name="" placeholder="패스워드를 입력해주세요." value="">
+
+		<input type="checkbox" name="" id="check01"><label for="check01">HTML</label>
+		<input type="checkbox" name="" id="check02"><label for="check02">CSS</label>
+		<input type="radio" name="rad" id="radio01"><label for="radio01">HTML</label>
+		<input type="radio" name="rad" id="radio02"><label for="radio02">CSS</label>
+
+		<label for="">
+			<input type="checkbox" name="">
+			<span>HTML</span>
+		</label>
+		<label for="">
+			<input type="checkbox" name="">
+			<span>CSS</span>
+		</label>
+		<label for="">
+			<input type="radio" name="rad">
+			<span>HTML</span>
+		</label>
+		<label for="">
+			<input type="radio" name="rad">
+			<span>CSS</span>
+		</label>
+
+		<!-- label을 매치시키지 않음 -->
+		<input type="button" value="전송" class="button btn-confirm">
+		<input type="submit" value="전송" class="button btn-confirm">
+		<input type="image" src="/" alt="확인" class="button btn-confirm">
+		<input type="reset" value="초기화" class="button btn-reset">
+		<input type="hidden" value="">
+
+		<button type="button" class="button btn-submit">전송</button>
+		<a href="http://" class="button btn-submit">전송</a>
+
+		<label for="">
+			<select name="" id="">
+				<option value="">선택</option>
+				<option value="" selected>123</option>
+				<option value="">가나다</option>
+				<option value="">ABC</option>
+			</select>
+		</label>
+		<label for="">
+			<select name="" id="">
+				<option value="">선택</option>
+				<optgroup label="서울특별시">
+					<option value="">마포구</option>
+					<option value="">성북구</option>
+					<option value="">강남구</option>
+				</optgroup>
+				<optgroup label="인천광역시">
+					<option value="">남동구</option>
+					<option value="">계양구</option>
+					<option value="">연수구</option>
+				</optgroup>
+			</select>
+		</label>
+
+		<label for="">
+			<textarea name="" id="" cols="75" rows="9" placeholder="내용을 입력해주세요."></textarea>
+		</label>
+
+		<label for="">
+			<input type="email" name="">
+		</label>
+		<label for="">
+			<input type="url" name="">
+		</label>
+		<label for="">
+			<input type="search" name="">
+		</label>
+		<label for="">
+			<input type="telephone" name="">
+		</label>
+		<label for="">
+			<input type="year" name="">
+		</label>
+		<label for="">
+			<input type="week" name="">
+		</label>
+		<label for="">
+			<input type="month" name="">
+		</label>
+		<label for="">
+			<input type="number" name="">
+		</label>
+
+	</fieldset>
+	</form>
+
+
+</body>
+</html>

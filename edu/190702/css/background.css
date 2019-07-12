@@ -1,0 +1,100 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+div {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+div:nth-child(1) {
+	background-image: url("../image/car-00.jpg");
+}
+div:nth-child(2) {
+	background-image: url("../image/car-01.jpg");
+}
+div:nth-child(3) {
+	background-image: url("../image/car-02.jpg");
+}
+div:nth-child(4) {
+	background-image: url("../image/car-03.jpg");
+}
+
+.box {
+	/* background-repeat: no-repeat;
+	background-position: 100% 90%;
+	background-image: url("../image/icon/ico_s1_on.png"); */
+	background: transparent url("../image/icon/ico_s1_on.png") 100% 90% no-repeat fixed;
+	background-size: auto;
+}
+
+.box1 {
+	width: 88px;
+	height: 88px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url("../image/icon/ico_s1_off.png");
+	background-attachment: unset;
+	background-size: 88px 88px;
+}
+
+.box1:hover {
+	background-image: url("../image/icon/ico_s1_on.png");
+}
+
+.sprite {
+	/* image replacement (IR기법) */
+	width: 88px;
+	height: 88px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url("../image/icon/icon_sample.png");
+	background-attachment: unset;
+	background-size: 732px 227px;
+}
+
+.sprite-image:hover {
+	background-position: 0 -92px;
+}
+
+.sprite-image1 {
+	background-position: 0 0;
+}
+.sprite-image2 {
+	background-position: -184px 0;	
+}
+.sprite-image3 {
+	background-position: -276px 0;
+}
+.sprite-image4 {
+	background-position: -552px 0;
+}
+
+
+
+
+/* 
+
+background: #000 url("") 0 0 no-repeat fixed/100%;
+background-color / 배경색
+background-repeat / defualt - repeat, 항상 좌측부터 시작
+										no-repeat, repeat-x, repeat-y
+background-position / 0(x축) 0(y축) - px, % 가능 / center middle / center / left /
+background-position-x / 잘 쓰지 않음.
+background-position-y / 잘 쓰지 않음.
+background-image / url("")
+background-attachment / scroll, fixed
+background-size / contain(가로 세로 영역을 균등하게), cover(꽉 채움), 100% 100%, 50px 50px
+
+*/

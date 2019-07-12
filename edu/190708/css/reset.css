@@ -1,0 +1,39 @@
+/* Reset */
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tfoot, form, fieldset, legend, caption, col, colgroup, tr, th, td, header, footer, section, article, nav, aside, address, figure, figcaption, span, i, em, strong, b, ins, del, a, img, input, select, textarea, button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.clear::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.text-hidden {
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 1px;
+	height: 1px;
+	color: transparent;
+}
+
+
+

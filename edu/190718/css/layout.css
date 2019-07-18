@@ -1,0 +1,117 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	font-family: 'Noto Sans KR', sans-serif, '맑은 고딕';
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: -0.05em;
+}
+
+button, .button {
+	line-height: 1;
+}
+
+/* Contents Wrapper */
+.contents-wrapper {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #222;
+}
+
+/* Navigation */
+nav {
+	
+}
+
+.gnb {
+	
+}
+
+.gnb::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Depth 1 */
+.gnb .depth1 {
+	position: relative;
+	float: left;
+	width: calc(100% / 5);
+	text-align: center;
+}
+
+.gnb .depth1:hover {
+	
+}
+.gnb .depth1 > a {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	border-bottom: 2px solid transparent;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-ms-transition: all ease .4s;
+	-o-transition: all ease .4s;
+}
+
+.gnb .depth1.on > a {
+	
+}
+
+.gnb .depth1:hover > a {
+	border-bottom-color: #fff;
+}
+
+/* Depth 2 */
+.gnb .depth2 {
+	position: absolute;
+	/*display: none;*/
+	width: 100%;
+	background-color: #999;
+	text-align: center;
+	
+	/*Effect*/
+	overflow: hidden;
+	height: 0;
+	transition: all ease .6s;
+	-webkit-transition: all ease .6s;
+	-moz-transition: all ease .6s;
+	-ms-transition: all ease .6s;
+	-o-transition: all ease .6s;
+}
+
+.gnb .depth2 > li {
+	
+}
+.gnb .depth2 > li a {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #fff;
+	border-bottom: 2px solid transparent;
+	
+}
+.gnb .depth1:hover .depth2 {
+	/* display: block; */
+	/* height: 200px; */
+	background-color: #444;
+}
+.gnb .depth1:hover .depth2 > li a {
+
+}
+
+.gnb .depth2 > li > a:hover {
+	border-bottom-color: #fff;
+}
+

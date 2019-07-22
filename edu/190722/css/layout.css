@@ -84,6 +84,7 @@ nav {
 	margin-left: 0;
 }
 .gnb .depth1 > a {
+	position: relative;
 	padding-bottom: 34px;
 	font-size: 1.6rem;
 	border-bottom: 2px solid transparent;
@@ -94,7 +95,6 @@ nav {
 	-o-transition: all ease .4s;
 }
 .gnb .depth1:hover > a {
-	position: relative;
 	color: #b9d0ff;
 }
 .gnb .depth1 > a::after {

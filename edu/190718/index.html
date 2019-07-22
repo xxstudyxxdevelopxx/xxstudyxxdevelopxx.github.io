@@ -10,95 +10,46 @@
 	<link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-	<div class="navigation vertical-nav">
-		<nav class="nav">
-			<ul class="gnb">
-				<li class="depth1">
-					<a href="#">메뉴1</a>
-					<ul class="depth2">
-						<li><a href="#">메뉴1-1</a></li>
-						<li><a href="#">메뉴1-2</a></li>
-						<li><a href="#">메뉴1-3</a></li>
-					</ul>
-				</li>
-				<li class="depth1">
-					<a href="#">메뉴2</a>
-					<ul class="depth2">
-						<li><a href="#">메뉴2-1</a></li>
-						<li><a href="#">메뉴2-2</a></li>
-						<li><a href="#">메뉴2-3</a></li>
-					</ul>
-				</li>
-				<li class="depth1">
-					<a href="#">메뉴3</a>
-					<ul class="depth2">
-						<li><a href="#">메뉴3-1</a></li>
-						<li><a href="#">메뉴3-2</a></li>
-						<li><a href="#">메뉴3-3</a></li>
-					</ul>
-				</li>
-				<li class="depth1">
-					<a href="#">메뉴4</a>
-					<ul class="depth2">
-						<li><a href="#">메뉴4-1</a></li>
-						<li><a href="#">메뉴4-2</a></li>
-						<li><a href="#">메뉴4-3</a></li>
-					</ul>
-				</li>
-				<li class="depth1">
-					<a href="#">메뉴5</a>
-					<ul class="depth2">
-						<li><a href="#">메뉴5-1</a></li>
-						<li><a href="#">메뉴5-2</a></li>
-						<li><a href="#">메뉴5-3</a></li>
-					</ul>
-				</li>
+	<div class="contents-wrapper">
+		<header class="header">
+			<h1><a href="#"><img src="image/logo.png" alt="로고"></a></h1>
+			<ul class="utility-menu">
+				<li><a href="">home</a></li>
+				<li><a href="">login</a></li>
+				<li><a href="">join</a></li>
+				<!-- 로그인 후
+				<li><a href="">logout</a></li>
+				<li><a href="">my info</a></li>
+				 -->
 			</ul>
-		</nav>
-		<!-- //.nav -->
-	</div>
-
-	<a href="#pop-up-notice" class="button btn-pop-up">팝업 생성</a>
-	<div id="pop-up-notice" class="pop-up-notice pop-up-wrap">
-		<div class="pop-up-contents">
-			<header class="pop-up-header">
-				<h2>타이틀</h2>
-			</header>
-			<main class="pop-up-main">
-				<table>
-					<caption>테이블</caption>
-					<colgroup>
-						<col>
-					</colgroup>
-					<thead>
-						<tr>
-							<th scope="col">HTML</th>
-							<th scope="col">CSS</th>
-							<th scope="col">JAVASCRIPT</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Hyper Text Markup Language</td>
-							<td>Cascading Style Sheets</td>
-							<td>ECMAScript</td>
-						</tr>
-						<tr>
-							<td>Hyper Text Markup Language</td>
-							<td>Cascading Style Sheets</td>
-							<td>ECMAScript</td>
-						</tr>
-						<tr>
-							<td>Hyper Text Markup Language</td>
-							<td>Cascading Style Sheets</td>
-							<td>ECMAScript</td>
-						</tr>
-					</tbody>
-				</table>
-			</main>
-			<footer class="pop-up-footer"></footer>
-			<a href="#" class="button btn-pop-up-close">닫기</a>
-		</div>
+			<nav class="nav">
+				<ul class="gnb">
+					<li class="depth1"><a href="#">회사소개</a>
+						<ul>
+							<li class="depth2"><a href="#">회사소개</a></li>
+							<li class="depth2"><a href="#">CEO인사말</a></li>
+							<li class="depth2"><a href="#">연혁</a></li>
+							<li class="depth2"><a href="#">조직도</a></li>
+							<li class="depth2"><a href="#"></a>찾아오시는 길</li>
+						</ul>
+					</li>
+					<li class="depth1"><a href="#">사업영역</a></li>
+					<li class="depth1"><a href="#">제품소개</a></li>
+					<li class="depth1"><a href="#">서비스안내</a></li>
+					<li class="depth1"><a href="#">고객지원</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section></section>
+		</main>
+		<footer class="footer">
+			<section class="top-area"></section>
+			<section class="bottom-area">
+				<address>서울시 중구 시원한길 119-1, 11층 / 사업자등록증 000-0000-0000000 / 대표 : 홀길동</address>
+				<p class="copyright">&copy;copyright 2018 OOOO. all rights reserved.</p>
+			</section>
+		</footer>
 	</div>
 </body>
 </html>

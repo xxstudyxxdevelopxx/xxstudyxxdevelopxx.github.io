@@ -1,0 +1,299 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	font-family: 'Noto Sans KR', sans-serif, '맑은 고딕';
+	font-weight: 400;
+	letter-spacing: -0.05em;
+	line-height: 1;
+}
+
+button, .button {
+}
+
+/* Contents Wrapper */
+.contents-wrapper {
+	width: 100%;
+}
+
+/* Header */
+.header-wrapper {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	background-color: rgba(000, 000, 000, 0.7);
+}
+header {
+	width: 1100px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header a {
+	display: inline-block;
+	color: #fff;
+}
+
+header > * {
+	float: left;
+}
+
+.logo {
+	margin-top: 34px;
+	margin-left: 20px;
+}
+
+/* Utility Menu */
+.utility-menu {
+	margin-top: 50px;
+	margin-left: 40px;
+}
+.utility-menu li {
+	float: left;
+	margin-right: 14px;
+	font-size: 1.3rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+.utility-menu li:last-child {
+	margin-right: 0;
+}
+
+.utility-menu li:hover a {
+	color: #b9d0ff;
+}
+
+/* GNB */
+nav {
+	float: right;
+	margin-top: 34px;
+	margin-right: 45px;
+}
+.gnb {
+	position: relative;
+}
+.gnb .depth1 {
+	float: left;
+	margin-left: 40px;
+}
+.gnb .depth1:first-child {
+	margin-left: 0;
+}
+.gnb .depth1 > a {
+	position: relative;
+	padding-bottom: 34px;
+	font-size: 1.6rem;
+	border-bottom: 2px solid transparent;
+	transition: all ease .4s;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-ms-transition: all ease .4s;
+	-o-transition: all ease .4s;
+}
+.gnb .depth1:hover > a {
+	color: #b9d0ff;
+}
+.gnb .depth1 > a::after {
+	position: absolute;
+	content: '';
+	top: 30px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #b9d0ff;
+	transition: all ease .6s;
+	-webkit-transition: all ease .6s;
+	-moz-transition: all ease .6s;
+	-ms-transition: all ease .6s;
+	-o-transition: all ease .6s;
+}
+.gnb .depth1:hover > a::after {
+	width: 100%;
+}
+.gnb .depth1:hover .gnb-depth2 {
+	display: block;
+}
+
+.gnb-depth2 {
+	display: none;
+	position: absolute;
+	top: 56px;
+	left: -20px;
+	min-width: 165px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.4rem;
+	background-color: rgba(000, 000, 000, 0.7);
+	
+}
+
+.gnb .depth2 {
+	margin-bottom: 15px;
+}
+.gnb .depth2:hover a {
+	color: #b9d0ff;
+}
+.gnb .depth2:last-child {
+	margin-bottom: 30px;
+}
+
+/* Main */
+.main-banner-wrapper {
+	height: 697px;
+	padding-top: 90px;
+	background: url(../image/main_visual.jpg);
+}
+.main-banner {
+	width: 1100px;
+}
+
+.company-menu, .board-area {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.company-menu ul {
+	width: 100%;
+}
+.company-menu ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.company-menu li {
+	float: left;
+	position: relative;
+	width: 25%;
+	height: 232px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #ededed;
+	border-top: none;
+
+}
+.company-menu li a {
+	display: inline-block;
+	width: 60px;
+	min-height: 60px;
+	margin-top: 88px;
+}
+.company-menu .board-name {
+	margin-top: 14px;
+}
+.company-menu img {
+	
+}
+
+.board-area::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.board-area > * {
+	float: left;
+	height: 248px;
+	padding: 48px 36px 50px;
+	
+}
+
+.notice-board, .qna-board {
+	width: 25%;
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+.gallery {
+	width: 50%;
+}
+
+/* Footer */
+.footer-wrapper {
+	background-color: #222;
+}
+
+footer {
+	width: 1100px;
+	min-height: 365px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer .top-area {
+	padding-top: 44px;
+	padding-bottom: 44px;
+	border-bottom: 2px solid #333;
+	text-align: center;
+}
+footer .top-area .title {
+	font-size: 2rem;
+	color: #fff;
+	margin-bottom: 10px;	
+}
+.title-bottom-bar {
+	display: inline-block;
+	width: 38px;
+	height: 3px;
+	margin-bottom: 24px;
+	border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	-moz-border-radius: 1.5px;
+	-ms-border-radius: 1.5px;
+	-o-border-radius: 1.5px;
+	background-color: #b9d0ff;
+}
+.cs-call-number {
+	font-size: 2.6rem;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.cs-working-time {
+	font-size: 1.3rem;
+	color: #666;
+	margin-bottom: 28px;
+}
+
+.legal-documents {
+	display: inline-block;
+}
+.legal-documents::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.legal-documents li {
+	float: left;
+	color: #999;
+}
+.legal-documents li a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 1.3rem;
+	color: #999;
+}
+
+footer .bottom-area {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 1.3rem;
+	color: #666;
+}
+footer .bottom-area::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+footer .bottom-area address {
+	font-style: normal;
+	margin-bottom: 10px;
+}
+.address-copyright-area {
+	float: left;
+}
+.footer-logo {
+	float: right;
+}

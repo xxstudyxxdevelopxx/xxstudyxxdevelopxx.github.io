@@ -1,0 +1,17 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif, '맑은 고딕';
+	font-size: 1.4rem;
+	font-weight: 400;
+	letter-spacing: -0.05em;
+	line-height: 1;
+	color: #fff;
+}
+
+button, .button {
+	text-decoration: none;
+	border-style: none;
+}

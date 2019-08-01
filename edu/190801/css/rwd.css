@@ -1,0 +1,144 @@
+@media ( max-width : 1099px ) {
+	
+	body {
+		min-width: 100%;
+		background-color: #fff;
+	}
+
+	/* Header */
+
+	.header-wrapper {
+		position: static;
+	}
+	
+	header {
+	}
+
+	header, footer {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	header h1 {
+		position: static;
+		width: 100%;
+	}
+
+	.utility-menu {
+		top: 0;
+		left: auto;
+		right: 10px;
+	}
+
+	.btn-menu {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		border: 1px solid #000;
+	}
+
+	nav {
+		position: static;
+		width: 100%;
+	}
+
+	nav::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+		
+	/* Depth 1 */
+		
+	.gnb .depth1 {
+		width: 20%;
+	}
+
+	/* Main Visual */
+
+	.main-banner-wrapper, .main-banner {
+		width: 100%;
+	}
+
+	/* Main */
+
+	main article {
+		height: auto;
+	}
+
+	.company-menu {
+		width: 100%;
+	}
+	
+	.company-menu li {
+		float: left;
+		width: 50%;
+		border-right: none;
+		border-left: 1px solid #ededed;
+	}
+	
+	.company-menu a:nth-child(2n+1) {
+		clear: both;
+		border-left: none;
+	}
+
+	.board-area {
+		width: 100%;
+	}
+
+	.notice-board {
+		width: 50%;
+	}
+
+	.qna-board {
+		width: 50%;
+		border-right: none;
+	}
+
+	.gallery {
+		clear: both;
+		width: 100%;
+	}
+
+	.board-area .gallery .gallery-list {
+		text-align: center;
+	}
+
+	.board-area .gallery .gallery-list li {
+		float: none;
+		display: inline-block;
+	}
+
+	/* Sub Page */
+
+	.side-menu {
+		display: none;
+	}
+
+	.contents-section {
+		float: none;
+		width: 100%;
+		padding-top: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+	
+	.contents-section .bread-scrum {
+		position: static;
+		width: 100%;
+		background-color: #f5f5f5;
+	}
+	
+	.contents-section .bread-scrum li::after {
+		content: '>';
+		padding-left: 5px;
+		
+	}
+	.contents-section .bread-scrum li:last-child::after {
+		content: '';
+	}
+
+}

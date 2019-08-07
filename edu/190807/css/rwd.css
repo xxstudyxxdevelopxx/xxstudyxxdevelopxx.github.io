@@ -1,0 +1,88 @@
+/* W800px */
+
+@media ( max-width : 800px ) {
+
+	/* Contents */
+	
+	.contents-wrapper {
+		width: 800px;
+	}
+	
+	/* Header */
+	
+	header {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	/* Nav */
+	
+	h1 {
+		float: none;
+		height: 30px;
+		text-align: center;
+	}
+	
+	nav {
+		float: none;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	nav a:first-child {
+		margin-left: 0;
+	}
+	
+	/* Maim */
+	
+	article {
+		float: left;
+	}
+	
+	.portfolio, .html5, .css3 {
+		height: 400px;
+	}
+	
+	.other-skill article {
+		margin-right: 0;
+	}
+
+	.other-skill article:nth-child(2n-1) {
+		margin-right: 20px;
+	}
+
+	.less, .js {
+		margin-bottom: 20px;
+	}
+
+	.less, .js,	.svn,	.git {
+		width: calc( ( 100% - 20px ) / 2 );
+		height: 400px;
+	}
+	
+	/* Footer */
+
+	.footer-wrapper {
+		width: 800px;
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+	}
+	
+	footer > * {
+		position: static;
+		text-align: center;
+	}
+	
+	.sns-info a {
+		float: none;
+	}
+	
+	.copyright {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+}
